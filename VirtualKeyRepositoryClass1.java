@@ -32,12 +32,18 @@ public class VirtualKeyRepositoryClass1 {
 		Scanner sc8=new Scanner(file);
 		if(f10==1)
 		{
+			int count=0;
 			while(sc8.hasNextLine())
 			{
 				String data5=sc8.nextLine();
 				String splitA[]=data5.split("@");
 				System.out.println(splitA[0]);
 				//System.out.println("Data"+data5);
+				count+=1;
+			}
+			if(count==0)
+			{
+				System.out.println("No USer Exists to fetch");
 			}
 		}
 		else if(f10==3)
